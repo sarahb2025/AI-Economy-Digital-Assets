@@ -14,7 +14,7 @@ const phases = [
     icon: BookOpen,
     title: 'Evaluate',
     subtitle: 'Honest reviews, no fluff',
-    description: 'Each tool listing includes clear pricing details, use cases, and an honest tagline — so you can quickly decide if it fits your workflow.',
+    description: 'Each tool listing includes clear pricing details, use cases, and an honest tagline so you can quickly decide if it fits your workflow.',
     tags: ['Pricing Info', 'Use Cases', 'Honest Reviews'],
   },
   {

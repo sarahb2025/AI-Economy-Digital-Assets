@@ -60,7 +60,7 @@ export function FeaturedTool({ tool }: FeaturedToolProps) {
             </div>
           </div>
 
-          {/* Right — CTAs */}
+          {/* Right: CTAs */}
           <div className="flex flex-row sm:flex-col gap-3 sm:w-44 sm:items-stretch">
             <a
               href={tool.url}
