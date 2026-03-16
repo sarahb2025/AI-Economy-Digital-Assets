@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* AI Economy – Apple-inspired clean white palette */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 214 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 214 100% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 214 100% 45%;
+
+    --chart-1: 214 100% 45%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 262 80% 57%;
+    --chart-4: 37 100% 51%;
+    --chart-5: 0 72% 51%;
+
+    --sidebar: 0 0% 95%;
+    --sidebar-foreground: 0 0% 7%;
+    --sidebar-primary: 214 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 92%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 214 100% 45%;
+
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    --shadow-sm: 0 1px 3px hsl(0 0% 0% / 0.08), 0 1px 2px hsl(0 0% 0% / 0.06);
+    --shadow: 0 4px 6px hsl(0 0% 0% / 0.07), 0 2px 4px hsl(0 0% 0% / 0.06);
+    --shadow-md: 0 10px 15px hsl(0 0% 0% / 0.10), 0 4px 6px hsl(0 0% 0% / 0.07);
+    --shadow-lg: 0 20px 25px hsl(0 0% 0% / 0.10), 0 10px 10px hsl(0 0% 0% / 0.06);
+    --shadow-xl: 0 25px 50px hsl(0 0% 0% / 0.15);
+    --shadow-2xl: 0 40px 80px hsl(0 0% 0% / 0.20);
+
+    --tracking-normal: -0.02em;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+  }
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans);
+  letter-spacing: -0.015em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: hsl(0 0% 98%); }
+::-webkit-scrollbar-thumb { background: hsl(0 0% 80%); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(0 0% 60%); }
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out both;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+
+/* Product card */
+.product-card {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-2xl);
+}
+
+/* Arrow button */
+.arrow-btn {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.3s ease,
+              color 0.3s ease;
+}
+.product-card:hover .arrow-btn {
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+}
+
+/* Phase card hover */
+.phase-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.phase-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Ecosystem card hover */
+.ecosystem-card {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.ecosystem-card:hover {
+  background-color: hsl(0 0% 92%);
+  border-color: hsl(0 0% 85%);
+}
+
+/* Icon scale hover */
+.icon-box {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.phase-card:hover .icon-box,
+.ecosystem-card:hover .icon-box {
+  transform: scale(1.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
