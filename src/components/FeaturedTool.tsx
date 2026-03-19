@@ -66,7 +66,7 @@ export function FeaturedTool({ tool }: FeaturedToolProps) {
               href={tool.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150 active:scale-[0.97] text-center"
+              className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150 text-center"
             >
               Try for Free
               <ArrowRight className="h-4 w-4" />

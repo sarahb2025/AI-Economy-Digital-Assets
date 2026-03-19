@@ -50,7 +50,7 @@ export function NewsletterCTA() {
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150 active:scale-[0.97] whitespace-nowrap"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150 whitespace-nowrap"
               >
                 Get started
                 <ArrowRight className="h-4 w-4" />

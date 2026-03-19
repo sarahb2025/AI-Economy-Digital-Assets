@@ -92,21 +92,12 @@ html {
   to { opacity: 1; }
 }
 
-@keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.96); }
-  to { opacity: 1; transform: scale(1); }
-}
-
 .animate-fade-in-up {
   animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .animate-fade-in {
   animation: fadeIn 0.5s ease-out both;
-}
-
-.animate-scale-in {
-  animation: scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* Stagger delays */
@@ -135,7 +126,6 @@ html {
               color 0.3s ease;
 }
 .product-card:hover .arrow-btn {
-  transform: scale(1.1);
   background-color: white;
   color: black;
 }
@@ -162,10 +152,7 @@ html {
 .icon-box {
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.phase-card:hover .icon-box,
-.ecosystem-card:hover .icon-box {
-  transform: scale(1.1);
-}
+
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

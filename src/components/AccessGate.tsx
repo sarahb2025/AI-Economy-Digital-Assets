@@ -44,7 +44,7 @@ export function AccessGate({ onUnlock }: { onUnlock: () => void }) {
           {/* CTA Button */}
           <button
             onClick={handleUnlock}
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-black text-white text-sm font-semibold rounded-xl hover:bg-[#111] active:scale-[0.97] transition-all"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-black text-white text-sm font-semibold rounded-xl hover:bg-[#111] transition-all"
           >
             Unlock My AI Toolkit
             <ArrowRight className="h-4 w-4" />
