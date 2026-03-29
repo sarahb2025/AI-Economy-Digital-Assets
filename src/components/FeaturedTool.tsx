@@ -29,11 +29,6 @@ export function FeaturedTool({ tool }: FeaturedToolProps) {
               <div>
                 <div className="flex items-center gap-2.5">
                   <h3 className="font-bold text-xl text-black">{tool.name}</h3>
-                  {tool.badge && (
-                    <span className="text-[11px] font-bold px-2.5 py-1 rounded-md bg-black text-white uppercase tracking-wide">
-                      {tool.badge}
-                    </span>
-                  )}
                 </div>
                 <span
                   className="inline-block text-[11px] font-medium px-2 py-0.5 rounded-md mt-1"
@@ -48,7 +43,7 @@ export function FeaturedTool({ tool }: FeaturedToolProps) {
               {tool.tagline}
             </p>
             <p className="text-[14px] text-[#6B7280] leading-relaxed mb-5">
-              {tool.description}
+              {tool.whatItDoes}
             </p>
 
             <div className="flex flex-wrap gap-2">

@@ -1,13 +1,8 @@
-import { Search, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
-interface HeroProps {
-  searchQuery: string
-  onSearchChange: (q: string) => void
-}
-
-export function Hero({ searchQuery, onSearchChange }: HeroProps) {
+export function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-[hsl(240_6%_90%)] bg-white">
+    <section className="relative overflow-hidden border-b border-[hsl(240_6%_90%)] bg-[#FAFAFA]">
       {/* Subtle grid background */}
       <div
         className="absolute inset-0 opacity-[0.03]"
@@ -36,64 +31,42 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
             </p>
 
             {/* Main headline */}
-            <h1 className="animate-fade-in-up delay-100 text-5xl sm:text-6xl lg:text-7xl font-bold text-black leading-[1.04] tracking-tight mb-6 max-w-3xl">
+            <h1 className="animate-fade-in-up delay-100 text-5xl sm:text-6xl lg:text-7xl font-bold text-[#111] leading-[1.04] tracking-tight mb-6 max-w-3xl">
               AI Tools That{' '}
               <span className="text-[hsl(210_100%_40%)]">Actually Work</span>
             </h1>
 
             {/* Sub */}
             <p className="animate-fade-in-up delay-200 text-lg text-[#6B7280] leading-relaxed max-w-2xl mb-10">
-              We've tested and handpicked the best AI tools across writing, coding, design, video, and more. Skip the noise and get straight to the results.
+              Not a directory of 500 tools. This is the select kit we actually use every day, with our go-to prompts and setup tips to get you moving fast.
             </p>
-
-            {/* Search */}
-            <div className="animate-fade-in-up delay-300 max-w-xl mb-10">
-              <div className="flex items-center gap-2.5 border border-[hsl(240_6%_85%)] rounded-xl px-4 py-3 bg-white shadow-sm focus-within:border-black focus-within:ring-1 focus-within:ring-black/10 transition-all duration-150">
-                <Search className="h-4.5 w-4.5 text-[#9CA3AF] shrink-0" style={{ width: '18px', height: '18px' }} />
-                <input
-                  type="text"
-                  placeholder="Search tools: writing, coding, image generation..."
-                  value={searchQuery}
-                  onChange={(e) => onSearchChange(e.target.value)}
-                  className="flex-1 text-sm text-black bg-transparent outline-none placeholder:text-[#9CA3AF]"
-                />
-                {searchQuery && (
-                  <button
-                    onClick={() => onSearchChange('')}
-                    className="text-xs text-[#6B7280] hover:text-black px-2 py-0.5 rounded bg-[#F3F4F6] transition-colors"
-                  >
-                    Clear
-                  </button>
-                )}
-              </div>
-            </div>
 
             {/* CTAs */}
             <div className="animate-fade-in-up delay-400 flex flex-wrap items-center gap-3">
               <a
-                href="#tools"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150"
+                href="#toolkit"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#111] text-[#F5F5F5] text-sm font-semibold hover:bg-[#222] transition-colors duration-150"
               >
-                Explore Products
+                Explore the Toolkit
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="#featured"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-[hsl(240_6%_85%)] text-[#374151] text-sm font-semibold hover:border-black hover:text-black transition-colors duration-150"
+                href="#newsletter"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-[hsl(240_6%_85%)] text-[#374151] text-sm font-semibold hover:border-[#111] hover:text-[#111] transition-colors duration-150"
               >
-                View Featured Tools ›
+                Get the Newsletter ›
               </a>
             </div>
 
             {/* Stats */}
             <div className="animate-fade-in-up delay-500 mt-12 flex flex-wrap items-center gap-8">
               {[
-                { value: '50+', label: 'AI Tools Reviewed' },
-                { value: '8', label: 'Categories' },
+                { value: '7', label: 'Tools in the Kit' },
+                { value: '35', label: 'Go-to Prompts' },
                 { value: 'Weekly', label: 'Updates' },
               ].map((stat, i) => (
                 <div key={i} className="text-center sm:text-left">
-                  <div className="text-xl font-bold text-black">{stat.value}</div>
+                  <div className="text-xl font-bold text-[#111]">{stat.value}</div>
                   <div className="text-xs text-[#9CA3AF] mt-0.5">{stat.label}</div>
                 </div>
               ))}
@@ -110,8 +83,8 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
                 style={{ maxHeight: '560px', objectPosition: 'top center' }}
               />
               {/* Subtle floating credential badge */}
-              <div className="absolute bottom-8 left-0 bg-white border border-[#E5E7EB] rounded-2xl px-4 py-3 shadow-lg">
-                <p className="text-xs font-semibold text-black">Sarah Speaks</p>
+              <div className="absolute bottom-8 left-0 bg-[#FAFAFA] border border-[#E5E7EB] rounded-2xl px-4 py-3 shadow-lg">
+                <p className="text-xs font-semibold text-[#111]">Sarah Speaks</p>
                 <p className="text-[11px] text-[#6B7280]">AI Tools Curator</p>
               </div>
             </div>
