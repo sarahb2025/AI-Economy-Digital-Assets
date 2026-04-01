@@ -25,7 +25,7 @@ export function NewsletterCTA() {
             AI that works.
           </h2>
           <p className="text-[15px] text-[#6B7280] leading-relaxed mb-8">
-            Get a weekly digest of the best new AI tools, honest reviews, and practical guides, delivered straight to your inbox. No hype, no spam.
+            Get a weekly digest of the best new AI tools, honest reviews, and practical guides — delivered straight to your inbox. No hype, no spam.
           </p>
 
           {submitted ? (
@@ -50,7 +50,7 @@ export function NewsletterCTA() {
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150 whitespace-nowrap"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150 active:scale-[0.97] whitespace-nowrap"
               >
                 Get started
                 <ArrowRight className="h-4 w-4" />

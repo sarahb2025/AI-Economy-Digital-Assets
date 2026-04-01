@@ -1,12 +1,4 @@
-const categories = [
-  { id: 'all', label: 'All' },
-  { id: 'writing', label: 'Writing & Chat' },
-  { id: 'image', label: 'Image & Design' },
-  { id: 'coding', label: 'Coding' },
-  { id: 'video', label: 'Video' },
-  { id: 'research', label: 'Research' },
-  { id: 'audio', label: 'Audio' },
-]
+import { categories } from '../data/tools'
 
 interface CategoryFilterProps {
   activeCategory: string

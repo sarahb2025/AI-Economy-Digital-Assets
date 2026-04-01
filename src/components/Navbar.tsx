@@ -42,7 +42,7 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <a
               href="#newsletter"
-              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150"
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150 active:scale-[0.97]"
             >
               Get Updates
             </a>

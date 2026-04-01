@@ -29,6 +29,11 @@ export function FeaturedTool({ tool }: FeaturedToolProps) {
               <div>
                 <div className="flex items-center gap-2.5">
                   <h3 className="font-bold text-xl text-black">{tool.name}</h3>
+                  {tool.badge && (
+                    <span className="text-[11px] font-bold px-2.5 py-1 rounded-md bg-black text-white uppercase tracking-wide">
+                      {tool.badge}
+                    </span>
+                  )}
                 </div>
                 <span
                   className="inline-block text-[11px] font-medium px-2 py-0.5 rounded-md mt-1"
@@ -43,7 +48,7 @@ export function FeaturedTool({ tool }: FeaturedToolProps) {
               {tool.tagline}
             </p>
             <p className="text-[14px] text-[#6B7280] leading-relaxed mb-5">
-              {tool.whatItDoes}
+              {tool.description}
             </p>
 
             <div className="flex flex-wrap gap-2">
@@ -55,13 +60,13 @@ export function FeaturedTool({ tool }: FeaturedToolProps) {
             </div>
           </div>
 
-          {/* Right: CTAs */}
+          {/* Right — CTAs */}
           <div className="flex flex-row sm:flex-col gap-3 sm:w-44 sm:items-stretch">
             <a
               href={tool.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150 text-center"
+              className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150 active:scale-[0.97] text-center"
             >
               Try for Free
               <ArrowRight className="h-4 w-4" />
