@@ -41,8 +41,6 @@ export function AccessGate({ onUnlock }: { onUnlock: () => void }) {
             Get instant access to AI tools that will transform the way you work.
           </p>
 
-
-
           {/* CTA Button */}
           <button
             onClick={handleUnlock}
@@ -67,7 +65,7 @@ export function AccessGate({ onUnlock }: { onUnlock: () => void }) {
             <div className="rounded-3xl overflow-hidden bg-[#F5F5F7] border border-[#E5E7EB]">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2F9DLQMDmFiPVlxtvVm2eBtiUPAbY2%2Fsarah30__46d93c63.png?alt=media&token=b07812b3-7e35-48e9-b3b4-06a4abf06c6f"
-                alt="Sarah — AI Tools Curator"
+                alt="Sarah, AI Tools Curator"
                 className="w-full aspect-[3/4] object-cover object-top"
               />
             </div>

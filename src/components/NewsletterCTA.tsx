@@ -25,7 +25,7 @@ export function NewsletterCTA() {
             AI that works.
           </h2>
           <p className="text-[15px] text-[#6B7280] leading-relaxed mb-8">
-            Get a weekly digest of the best new AI tools, honest reviews, and practical guides — delivered straight to your inbox. No hype, no spam.
+            Get a weekly digest of the best new AI tools, honest reviews, and practical guides, delivered straight to your inbox. No hype, no spam.
           </p>
 
           {submitted ? (

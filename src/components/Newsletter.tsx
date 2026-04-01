@@ -21,7 +21,7 @@ export function Newsletter() {
               AI Toolkit Newsletter
             </h2>
             <p className="text-zinc-400 text-lg md:text-xl font-medium mb-10 leading-relaxed">
-              Join 15,000+ professionals getting the best AI tool reviews, exclusive deals, and weekly roundups — straight to your inbox.
+              Join 15,000+ professionals getting the best AI tool reviews, exclusive deals, and weekly roundups, straight to your inbox.
             </p>
 
             {submitted ? (

@@ -26,7 +26,7 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
             <div className="animate-fade-in-up mb-6">
               <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1D4ED8] bg-[#EFF6FF] border border-[#BFDBFE] px-3 py-1.5 rounded-full tracking-wide uppercase">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#2563EB] animate-pulse" />
-                Curated AI Tools — Updated Weekly
+                Curated AI Tools, Updated Weekly
               </span>
             </div>
 
@@ -43,7 +43,7 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
 
             {/* Sub */}
             <p className="animate-fade-in-up delay-200 text-lg text-[#6B7280] leading-relaxed max-w-2xl mb-10">
-              We've tested and handpicked the best AI tools across writing, coding, design, video, and more — so you can skip the noise and get straight to the results.
+              We've tested and handpicked the best AI tools across writing, coding, design, video, and more. Skip the noise and get straight to the results.
             </p>
 
             {/* Search */}
@@ -52,7 +52,7 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
                 <Search className="h-4.5 w-4.5 text-[#9CA3AF] shrink-0" style={{ width: '18px', height: '18px' }} />
                 <input
                   type="text"
-                  placeholder="Search tools — writing, coding, image generation..."
+                  placeholder="Search tools: writing, coding, image generation..."
                   value={searchQuery}
                   onChange={(e) => onSearchChange(e.target.value)}
                   className="flex-1 text-sm text-black bg-transparent outline-none placeholder:text-[#9CA3AF]"
@@ -105,7 +105,7 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
             <div className="relative w-[380px]">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2F9DLQMDmFiPVlxtvVm2eBtiUPAbY2%2Fsarah30__46d93c63.png?alt=media&token=b07812b3-7e35-48e9-b3b4-06a4abf06c6f"
-                alt="Sarah — AI Toolkit curator"
+                alt="Sarah, AI Toolkit curator"
                 className="w-full object-cover object-top"
                 style={{ maxHeight: '560px', objectPosition: 'top center' }}
               />
