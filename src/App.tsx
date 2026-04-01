@@ -42,10 +42,10 @@ function ToolkitGrid() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Row 1: 2 featured cards */}
         <div className="grid grid-cols-12 gap-6 md:gap-8">
-          <div className="col-span-12 lg:col-span-7 animate-scale-in">
+          <div className="col-span-12 lg:col-span-7 animate-fade-in-up">
             <ToolCard tool={featured[0]} size="large" />
           </div>
-          <div className="col-span-12 lg:col-span-5 animate-scale-in delay-100">
+          <div className="col-span-12 lg:col-span-5 animate-fade-in-up delay-100">
             <ToolCard tool={featured[1]} size="large" />
           </div>
 
@@ -53,7 +53,7 @@ function ToolkitGrid() {
           {row2.map((tool, i) => (
             <div
               key={tool.id}
-              className="col-span-12 md:col-span-6 lg:col-span-4 animate-scale-in"
+              className="col-span-12 md:col-span-6 lg:col-span-4 animate-fade-in-up"
               style={{ animationDelay: `${(i + 2) * 80}ms` }}
             >
               <ToolCard tool={tool} size="medium" />
@@ -64,7 +64,7 @@ function ToolkitGrid() {
           {row3.map((tool, i) => (
             <div
               key={tool.id}
-              className="col-span-12 md:col-span-6 lg:col-span-4 animate-scale-in"
+              className="col-span-12 md:col-span-6 lg:col-span-4 animate-fade-in-up"
               style={{ animationDelay: `${(i + 5) * 80}ms` }}
             >
               <ToolCard tool={tool} size="medium" />
@@ -72,12 +72,12 @@ function ToolkitGrid() {
           ))}
 
           {/* View all CTA card */}
-          <div className="col-span-12 lg:col-span-4 animate-scale-in delay-700">
+          <div className="col-span-12 lg:col-span-4 animate-fade-in-up delay-700">
             <a
               href="#"
               className="product-card group relative rounded-[32px] overflow-hidden bg-[#F5F5F7] border border-black/5 cursor-pointer flex flex-col h-[550px] items-center justify-center text-center p-10 hover:bg-[#ebebeb] transition-colors"
             >
-              <div className="mb-6 w-20 h-20 rounded-full bg-black flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <div className="mb-6 w-20 h-20 rounded-full bg-black flex items-center justify-center transition-transform duration-300">
                 <ArrowRight className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">
@@ -175,10 +175,10 @@ function About() {
     <section id="about" className="py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[450px_1fr] gap-16 items-center">
         {/* Visual */}
-        <div className="relative aspect-[4/5] md:aspect-square rounded-[48px] overflow-hidden bg-[#F5F5F7] group w-full max-w-[450px] animate-scale-in">
+        <div className="relative aspect-[4/5] md:aspect-square rounded-[48px] overflow-hidden bg-[#F5F5F7] group w-full max-w-[450px] animate-fade-in-up">
           <img
             alt="AI Toolkit curator"
-            className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+            className="w-full h-full object-cover"
             src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />

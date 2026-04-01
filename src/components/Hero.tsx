@@ -72,7 +72,7 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
             <div className="animate-fade-in-up delay-400 flex flex-wrap items-center gap-3">
               <a
                 href="#tools"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150 active:scale-[0.97]"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-black text-white text-sm font-semibold hover:bg-[#111] transition-colors duration-150"
               >
                 Explore Products
                 <ArrowRight className="h-4 w-4" />

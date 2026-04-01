@@ -90,7 +90,7 @@ export function ToolCard({ tool, index = 0 }: ToolCardProps) {
             e.stopPropagation()
             window.open(tool.url, '_blank', 'noopener,noreferrer')
           }}
-          className="w-full py-2.5 rounded-lg border border-[hsl(240_6%_85%)] text-[13px] font-semibold text-[#374151] hover:border-black hover:bg-black hover:text-white transition-all duration-150 active:scale-[0.97]"
+          className="w-full py-2.5 rounded-lg border border-[hsl(240_6%_85%)] text-[13px] font-semibold text-[#374151] hover:border-black hover:bg-black hover:text-white transition-all duration-150"
         >
           Try {tool.name} →
         </button>
